@@ -116,7 +116,7 @@ margin-bottom: 50px;
 }
 /* feature styles */
 .features{
-  gap: 140px;
+  gap: 130px;
 }
 #feature-section-tittle{
   border-left: 5px solid #ff900e;
@@ -133,7 +133,13 @@ box-shadow: 0 4px 30px rgba(0,0,0,0.06);
 margin-bottom: 20px;
 border-radius: 8px;
 }
-
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
 /* some facts related styles */
 .fact-card{
   border: 1px solid #ff900e;
@@ -175,7 +181,10 @@ border-radius: 8px;
 }
 /* responsive media query */
 @media screen and (max-width:576px) {
-.navbar,.nav-links, .teams{
+.navbar,
+.nav-links,
+ .teams,
+ .features{
   display: flex;
   flex-direction: column;
 }
@@ -195,9 +204,17 @@ border-radius: 8px;
 .our-features{
   margin-left: 20px;
 }
+.feature-img img{
+   width: 100%;
+}
+#experience-badge{
+  margin-top: 20px;
+  margin-left: 20px;
+}
 }
 @media screen and (min-width:576px) and (max-width:992px) {
-  .teams{
+  .teams,
+  .features{
     flex-direction: column;
   }
   .our-features{
@@ -208,4 +225,11 @@ border-radius: 8px;
     gap: 50px;
     justify-items: center;
   }
+  #experience-badge{
+  
+    margin: 20px auto;
+  }
+  .feature-img img{
+    width: 100%;
+ }
 }
